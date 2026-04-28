@@ -41,3 +41,11 @@ python -m http.server 8000
 ```
 
 Canvas frame loading requires HTTP — do not open `index.html` directly via `file://`.
+
+## Deployment Notes (Vercel)
+
+The `frames/` directory **must always be committed to git**. It contains the extracted video frames that power the scroll-driven canvas animation. If `frames/` is missing from the repo, the animation will not render on Vercel or any static host.
+
+- Never add `frames/` to `.gitignore`
+- After running `/video-to-website` and generating new frames, always `git add frames/` and commit before pushing
+- Typical size: ~20MB for 241 frames — within GitHub and Vercel limits

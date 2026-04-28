@@ -23,8 +23,10 @@ out/
 build/
 dist/
 
-# ── Video frames (generated, large) ───────────────────────────────────────────
-frames/
+# ── Video frames ──────────────────────────────────────────────────────────────
+# NOTE: frames/ is intentionally tracked in git.
+# These are required for the scroll-driven canvas animation to work on Vercel.
+# Do NOT add frames/ to this file.
 
 # ── OS & Editor ───────────────────────────────────────────────────────────────
 .DS_Store
