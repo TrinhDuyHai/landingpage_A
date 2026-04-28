@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlueStone BLB-6036 — Premium High-Speed Blender</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ─── Loader ─────────────────────────────────────────── -->
+  <div id="loader">
+    <div class="loader-brand">BLUESTONE</div>
+    <div class="loader-progress">
+      <div id="loader-bar"></div>
+    </div>
+    <div id="loader-percent">0%</div>
+  </div>
+
+  <!-- ─── Fixed Header ──────────────────────────────────── -->
+  <header class="site-header">
+    <nav>
+      <div class="nav-logo">BLUESTONE</div>
+      <div class="nav-links">
+        <a href="#">Features</a>
+        <a href="#">Specs</a>
+        <a href="#" class="nav-cta">Order Now</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ─── Hero Standalone ───────────────────────────────── -->
+  <section class="hero-standalone" id="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">BLUESTONE</span>
+      <h1 class="hero-heading">
+        <span class="hero-word" data-word="BLB">BLB</span><span class="hero-dash">–</span><span class="hero-word" data-word="6036">6036</span>
+      </h1>
+      <p class="hero-tagline">The Power to Create Anything</p>
+      <div class="scroll-indicator">
+        <div class="scroll-line"></div>
+        <span class="scroll-label">Scroll</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Canvas ────────────────────────────────────────── -->
+  <div class="canvas-wrap" id="canvas-wrap">
+    <canvas id="canvas"></canvas>
+  </div>
+
+  <!-- ─── Dark Overlay ──────────────────────────────────── -->
+  <div id="dark-overlay"></div>
+
+  <!-- ─── Marquee ───────────────────────────────────────── -->
+  <div class="marquee-wrap" id="marquee">
+    <div class="marquee-text">BLEND&nbsp;&nbsp;·&nbsp;&nbsp;CRUSH&nbsp;&nbsp;·&nbsp;&nbsp;CREATE&nbsp;&nbsp;·&nbsp;&nbsp;BLEND&nbsp;&nbsp;·&nbsp;&nbsp;CRUSH&nbsp;&nbsp;·&nbsp;&nbsp;CREATE&nbsp;&nbsp;·&nbsp;&nbsp;BLEND&nbsp;&nbsp;·&nbsp;&nbsp;CRUSH&nbsp;&nbsp;·&nbsp;&nbsp;CREATE&nbsp;&nbsp;·&nbsp;&nbsp;</div>
+  </div>
+
+  <!-- ─── Scroll Container ──────────────────────────────── -->
+  <div id="scroll-container">
+
+    <!-- 001 / Power -->
+    <section class="scroll-section section-content align-left"
+             data-enter="8" data-leave="24" data-animation="fade-up">
+      <div class="section-inner">
+        <span class="section-label">001 / POWER</span>
+        <h2 class="section-heading">Unmatched<br>Power</h2>
+        <p class="section-body">1500W of raw motor force. Ice, frozen fruit, hard nuts — nothing holds it back. Every blend is consistent, powerful, and effortless.</p>
+      </div>
+    </section>
+
+    <!-- 002 / Control -->
+    <section class="scroll-section section-content align-right"
+             data-enter="28" data-leave="44" data-animation="slide-right">
+      <div class="section-inner">
+        <span class="section-label">002 / CONTROL</span>
+        <h2 class="section-heading">Total<br>Control</h2>
+        <p class="section-body">12 variable speeds and a dedicated pulse function. You decide the texture — silky smooth or satisfyingly chunky, every single time.</p>
+      </div>
+    </section>
+
+    <!-- 003 / Design -->
+    <section class="scroll-section section-content align-left"
+             data-enter="47" data-leave="62" data-animation="clip-reveal">
+      <div class="section-inner">
+        <span class="section-label">003 / DESIGN</span>
+        <h2 class="section-heading">Built to<br>Last</h2>
+        <p class="section-body">BPA-free Tritan jar. 6-point stainless steel blades. Engineered to endure daily use and deliver peak performance for years.</p>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="scroll-section section-stats"
+             data-enter="64" data-leave="80" data-animation="stagger-up">
+      <div class="stats-grid">
+        <div class="stat">
+          <div class="stat-value-wrap">
+            <span class="stat-number" data-value="1500" data-decimals="0">0</span>
+            <span class="stat-suffix">W</span>
+          </div>
+          <span class="stat-label">Motor Power</span>
+        </div>
+        <div class="stat">
+          <div class="stat-value-wrap">
+            <span class="stat-number" data-value="36" data-decimals="0">0</span>
+            <span class="stat-suffix">k</span>
+          </div>
+          <span class="stat-label">RPM</span>
+        </div>
+        <div class="stat">
+          <div class="stat-value-wrap">
+            <span class="stat-number" data-value="1.5" data-decimals="1">0</span>
+            <span class="stat-suffix">L</span>
+          </div>
+          <span class="stat-label">Jar Capacity</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="scroll-section section-cta"
+             data-enter="83" data-leave="100" data-animation="scale-up" data-persist="true">
+      <div class="section-inner cta-inner">
+        <span class="section-label">BLUESTONE OFFICIAL</span>
+        <h2 class="cta-heading">BLB-6036</h2>
+        <p class="cta-sub">Premium High-Speed Blender</p>
+        <a href="#" class="cta-button">Order Now</a>
+      </div>
+    </section>
+
+  </div><!-- /scroll-container -->
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

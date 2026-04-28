@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//var/folders/hj/_y13pxk91yzcctql80yr3vfh0000gn/T/tmp.Och6djSHZG/skills-repo/**)",
+      "Bash(mktemp -d)",
+      "Bash(git clone *)",
+      "Bash(echo \"Clone exit: $?\")"
+    ]
+  }
+}
