@@ -1,1 +1,51 @@
+# ── Environment & Secrets ──────────────────────────────────────────────────────
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+.env.staging
+.env.*.local
+# Allow only placeholder file
+!.env.example
+
+# ── Dependencies ───────────────────────────────────────────────────────────────
+node_modules/
+.pnpm-store/
+.pnpm-debug.log
+
+# ── Next.js ───────────────────────────────────────────────────────────────────
+.next/
+out/
+build/
+dist/
+
+# ── Video frames (generated, large) ───────────────────────────────────────────
 frames/
+
+# ── OS & Editor ───────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+.vscode/settings.json
+.idea/
+
+# ── Claude Code (local config only) ───────────────────────────────────────────
+.claude/settings.local.json
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# ── Testing & Coverage ────────────────────────────────────────────────────────
+coverage/
+.nyc_output/
+
+# ── Gitleaks report ───────────────────────────────────────────────────────────
+gitleaks-report.json

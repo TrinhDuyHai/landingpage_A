@@ -1,0 +1,17 @@
+{
+  "name": "landingpage-a",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "security:secrets": "gitleaks detect --source . --no-git --report-format json --report-path gitleaks-report.json && echo '✅ No secrets found' || (cat gitleaks-report.json | python3 -c \"import json,sys; data=json.load(sys.stdin); [print(f\\\"  ⚠️  {h[\\\"RuleID\\\"]}: {h[\\\"File\\\"]}:{h[\\\"StartLine\\\"]} — {h[\\\"Secret\\\"][:4]}***{h[\\\"Secret\\\"][-4:]}\\\") for h in data]; sys.exit(1)\")"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=9.0.0"
+  }
+}

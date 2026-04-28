@@ -1,0 +1,18 @@
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Global allowlist"
+paths = [
+  ".env.example",
+  "gitleaks-report.json",
+  "frames/",
+  "node_modules/",
+]
+
+# Suppress false positives from Google Fonts URLs
+[[rules]]
+id = "google-fonts-url"
+description = "Allow Google Fonts stylesheet URLs"
+regex = '''fonts\.googleapis\.com'''
+allowlist.regexes = ['.*fonts\.googleapis\.com.*']
